@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <script src="https://use.fontawesome.com/fb2ed2b96d.js"></script> -->
+    <script src="https://kit.fontawesome.com/0e085266a1.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+
+        // ------------side bar-----------
+        $(document).ready(function(){
+        $("#hide").click(function(){
+            $(".rightDiv").hide();
+            $('body').css({overflow : 'auto'});
+            location.reload(true);
+        });
+        $("#show").click(function(){
+            $(".rightDiv").show();
+            $('body').css({overflow: ($("#sidebar").hasClass("open") ? 'hidden' : 'scroll')});
+        });
+        });
+
+        // ------------filter form-----------
+
+        $(document).ready(function(){
+        $("#filter").click(function(){
+        $(".filterFormMainDiv").toggle();
+        });
+        });
+
+        $(function() {
+            $("#filter").click(function() {
+                $("#filter").toggleClass('tblWithBorder');
+            });
+        });
+    </script>
+
+
+</head>
+<body>
+    <div class="mainDiv">
+
+        <!-- ----------- sidebar----------- -->
+        <div class="rightDiv open" id="sidebar">
+            <div class="sidebarMainDiv">
+                <div>
+                    <i class="fas fa-times" id="hide"></i>
+                </div>
+                <div class="sidelogo">
+                    <img src="logo/Screenshot (369).png" alt="" width="100px" height="30px">
+                </div>
+                <div class="sideBarheader">
+                    <div class="headerDiv1">
+                        <i class="fa fa-user"></i>
+                        <p >
+                            <span class="headingDark">Rodrigo do Carmo</span><br>
+                            <span class="headingLight">Finances</span>
+                        </p>
+                        <p class="dropdown-toggle"></p>
+                    </div>
+                </div>
+                
+                <div class="sidebarButtons">
+                    <button class="btn button1">
+                        <i class="fa fa-copy"></i>
+                        <span>Invoice</span>
+                    </button>
+                    <button class="btn button2">
+                        <i class="far fa-clock "></i>
+                        <span>Reports</span>
+                    </button>
+                    <button class="btn button3">
+                        <i class="fa fa-university"></i>
+                        <span>Banking</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- ---------------main data--------------- -->
+        <div class="leftDiv">
+            <div class="leftDivContainerMain">
+
+                <!-- --------small header start---------- -->
+                <div class="smallHeaderDiv">
+                    <div class="row">
+                        <div class="col-4 text-left"><i class="fa fa-sliders-h" id="show"></i> </div>
+                        <div class="col-4 text-center"> 
+                            <img src="logo/Screenshot (369).png" width="100px" height="30px" alt="">
+                        </div>
+                        <div class="col-4"></div>
+                    </div>
+                </div>
+
+                <!-- --------small header end---------- -->
+                
+                <!-- --------header start---------- -->
+                <div class="header">
+                    <div class="headerDiv1">
+                        <i class="fa fa-user"></i>
+                        <p >
+                            <span class="headingDark">Rodrigo do Carmo</span><br>
+                            <span class="headingLight">Finances</span>
+                        </p>
+                        <p class="dropdown-toggle"></p>
+                    </div>
+                </div>
+
+                <!-- --------header end---------- -->
+
+                <!-- --------week start---------- -->
+
+                <div class="perWeek">
+                    <div class="perWeekDiv1">
+                        <div class="week">
+                            <p>
+                                <span class="headingDark">This Week</span> <br>
+                                <span class="blueDollar">1 &#183; $55</span>
+                            </p>
+                            <p class="percentRed">-50%</p>
+                        </div>
+                        <div class="week">
+                            <p>
+                                <span class="headingDark">This Week</span> <br>
+                                <span class="blueDollar">1 &#183; $55</span>
+                            </p>
+                            <p class="percentGreen">-50%</p>
+                        </div>
+                        <div class="week">
+                            <p>
+                                <span class="headingDark">This Week</span> <br>
+                                <span class="blueDollar">1 &#183; $55</span>
+                            </p>
+                            <p class="percentRed">-50%</p>
+                        </div>
+                        <div class="week">
+                            <p>
+                                <span class="headingDark">This Week</span> <br>
+                                <span class="blueDollar">1 &#183; $55</span>
+                            </p>
+                            <p class="percentRed">-50%</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --------week end---------- -->
+
+
+                <!-- --------dashBoard start---------- -->
+
+                <div class="dashBoard">
+                    <div class="dashBoard1">
+                        <p class="dashHeading">Dashboard</p>
+                        <div class="dashBoardDiv1">
+                            <i class="far fa-calendar"></i>
+                            <p >
+                                <span class="headingLight">Period</span><br>
+                                <span class="headingDark">Last 30 Days</span>
+                            </p>
+                            <p class="dropdown-toggle"></p>
+                        </div>
+                    </div>
+                    <div class="dashBoard2">
+                        <p>
+                            <span class="headingDark">Total</span> <br>
+                            <span  class="bluedash">R$ 1.436,35</span> <br>
+                            <span class="greendash">+ 10% </span>
+                            <span class="headingLight">last period</span>
+                        </p>
+                    </div>
+                    <div class="dashBoard3">
+                        <div class="dashBoardGraph" >
+                            <img src="logo/gr.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- --------dashBoard end---------- -->
+
+                <!-- --------invoice start---------- -->
+
+                    <!-- ---------- for small screen---------- -->
+                <!-- <div class="invoiceDiv">
+
+
+
+                    <div class="row justify-content-between largeHidden">
+                        <div class="col-4">Invoices</div>
+                        <div class="col-5 text-right">
+                            <button class="btn createInvoice"><span>Create Invoice</span></button>
+                        </div>
+                    </div>
+                </div>   -->
+
+                <div class="invoice">
+
+                    <!-- ---------- for large screen---------- -->
+                    
+                    <div class="invoiceInner">
+                        <div class="invoiceHead">Invoices</div>
+                        <div class="invoiceButtons">
+                            <div class="div">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                    <div class="input-group-append">
+                                      <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                    </div>
+                                </div>
+                            </div>
+                           <div class="threebuttons">
+                                <button class="btn buttons"id="filter" onclick="mark(this)">
+                                    <i class="fa fa-sort-amount-up" ></i>
+                                    <span>Filter</span>
+                                </button>
+                                <button class="btn buttons">
+                                    <i class="fa fa-print"></i>
+                                    <span>Print</span>
+                                </button>
+                                <button class="btn buttons">
+                                    <i class="fa fa-download"></i>
+                                    <span>Download</span>
+                                </button>
+                                <button class="btn createInvoice buttons">
+                                    <span>Create Invoices</span>
+                                </button>
+                           </div>
+                            
+                        </div>
+                        
+                    </div>
+
+
+                    <!-- ---------- for small screen---------- -->
+                    <div  class="invoiceHeadSmall">
+                        <div class="div">
+                            <div class="invoiceHead">Invoices</div>
+                            <button class="btn createInvoice buttons">
+                                <span>Create Invoices</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="invoiceInnerSamll">
+                        <div class="div">
+                            <div class="input-group">
+                                <input type="text" class="form-control" aria-label="Amount (to the nearest dollar)">
+                                <div class="input-group-append">
+                                  <span class="input-group-text"><i class="fa fa-search"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="threebuttons">
+                            <button class="btn buttons">
+                                <i class="fa fa-print"></i>
+                            </button>
+                            <button class="btn buttons">
+                                <i class="fa fa-print"></i>
+                            </button>
+                            <button class="btn buttons">
+                                <i class="fa fa-download"></i>
+                            </button>
+                       </div>
+                    </div>
+                </div>
+
+                <!-- --------invoice end---------- -->
+
+              <!-- --------------------------filter form start------------------------- -->
+
+                <div class="filterFormMainDiv">
+                    <div class="form">
+                        <div class="filterFormInnerDiv box arrow-top">
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Get Generated</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span>Get Generated</span>
+                                            <p ><i class="far fa-calendar"></i></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div> 
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Date Paid</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Date Paid</span>
+                                            <p ><i class="far fa-calendar"></i></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>   
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Unpaid As Of</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Unpaid As Of</span>
+                                            <p ><i class="far fa-calendar"></i></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Sent As Of</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span>Sent As Of</span>
+                                            <p ><i class="far fa-calendar"></i></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                          
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Amount Total</label>
+                                    <input type="text" class="form-control" placeholder="Amount Total" style="padding-bottom: 7px;">
+                                </div>
+                            </div>
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >City</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Select One</span>
+                                            <p class="dropdown-toggle"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>      
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >State</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Select One</span>
+                                            <p class="dropdown-toggle"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Country</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Select One</span>
+                                            <p class="dropdown-toggle"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >ITD Status</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Select One</span>
+                                            <p class="dropdown-toggle"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Sent/Unsent</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Select One</span>
+                                            <p class="dropdown-toggle"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Business Billing</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Select One</span>
+                                            <p class="dropdown-toggle"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Payment Method</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Select One</span>
+                                            <p class="dropdown-toggle"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Distributor</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Select One</span>
+                                            <p class="dropdown-toggle"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Payable Notice</label>
+                                    <div class="dropdown">
+                                        <button class="btn"  >
+                                            <span> Select One</span>
+                                            <p class="dropdown-toggle"></p>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>    
+           
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Invoice ID</label>
+                                    <input type="text" class="form-control" placeholder="Invoice ID">
+                                </div>
+                            </div>      
+                            <div class="inputFormDiv">
+                                <div class="form-group">
+                                    <label >Business ID</label>
+                                    <input type="text" class="form-control" placeholder="Business ID">
+                                </div>
+                            </div>                
+                            <div class="div">
+                                <button class="btn"><span>Apply Filters</span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+             
+              <!-- --------------------------filter form end------------------------- -->
+                
+              <!-- --------------------------tableData start------------------------- -->
+
+             
+
+
+                
+                <div class="tableDataMainDiv">
+
+ <!-- --------------------------large screen------------------------- -->
+
+
+
+                    <div class="tableDataInnerDiv">
+
+                        <table class="table  borderless">
+                            <thead>
+                              <tr>
+                                <th><input type="checkbox" name="" id="check"></th>
+                                <th>ID</th>
+                                <th>BUSINESS</th>
+                                <th>DUE DATE</th>
+                                <th>AMOUNT</th>
+                                <th>STATUS</th>
+                                <th>OPTIONS</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="pending">Pending</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="pending">Pending</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="pending">Pending</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="pending">Pending</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="pending">Pending</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="due">Past Due</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="due">Past Due</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="due">Past Due</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="due">Past Due</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="due">Past Due</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="paid">Paid</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-up "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="paid">Paid</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-up "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="paid">Paid</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-up "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="paid">Paid</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-up "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="paid">Paid</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-up "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="paid">Paid</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-up "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="due">Past Due</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="due">Past Due</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>1</td>
+                                    <td>Disney is the massacar theroy</td>
+                                    <td>02/03/2021</td>
+                                    <td>$ 110.25</td>
+                                    <td ><span class="due">Past Due</span></td>
+                                    <td class="icons">
+                                        <i class="far fa-thumbs-down "></i>
+                                        <i class="fas fa-link "></i>
+                                        <i class="fa fa-pencil-alt "></i>
+                                        <i class="far fa-trash-alt icon1"></i>
+                                    </td>
+                                </tr>
+                            </tbody>
+                          </table>
+                    </div>
+
+<!-- --------------------------small screen------------------------- -->
+
+                    <div class="tableDataSmallDiv">
+                        <table border="1px" class="borderless">
+                            <thead>
+                                <tr>
+                                    <td><input type="checkbox" name="" id=""></td>
+                                    <td>INVOICES</td>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="pending ">Pending</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="pending ">Pending</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="pending ">Pending</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="due ">Due Date</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="due ">Due Date</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="due ">Due Date</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="due ">Due Date</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="due ">Due Date</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="paid ">Paid</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-up "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="paid ">Paid</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-up "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="paid ">Paid</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-up "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="pending ">Pending</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td>
+                                     <input type="checkbox" name="" id="">
+                                    </td>
+                                    <td>
+                                        <p class="invoiceName"> <span>#1. </span> <span >Disney </span></p>
+                                        <p><span>$ 110.25</span></p>
+                                        <p class="datespan"> <span><b>Due Date : </b> 02/03/2021</span></p>
+                                    </td>
+                                    <td class="text-right">
+                                         <span class="pending ">Pending</span>
+                                         <div class="icons">
+                                             <i class="far fa-thumbs-down "></i>
+                                             <i class="fas fa-link "></i>
+                                             <i class="fa fa-pencil-alt "></i>
+                                             <i class="far fa-trash-alt icon1"></i>
+                                         </div>
+                                    </td>
+                                 </tr>
+                                 
+                                  
+                                 
+                            </tbody>
+                            
+                        </table>
+                    </div>
+
+                </div>
+
+                 
+
+
+ <!-- --------------------------tableData end------------------------- -->
+                <div class="mainFooterDiv">
+                   <div class="footer">
+                        <div class="footerdiv1">
+                            <button class="btn">
+                                <span>20</span>
+                                <p class="dropdown-toggle"></p>
+                            </button>
+                            <p class="results">results per page</p>
+                        </div>
+                        <div class="footerdiv2">
+                            <p><i class="fa fa-chevron-left"></i></p>
+                            <p class="one">1</p>
+                            <p>2</p>
+                            <p class="hidefooter">...</p>
+                            <p class="hidefooter">11</p>
+                            <p><i class="fa fa-chevron-right"></i></p>
+                        </div>
+                   </div>
+                </div>
+
+<!--         
+                            <div class="col-1half"><i class="fa fa-chevron-left"></i></div>
+                            <div class="col-1half one"><span>1</span></div>
+                            <div class="col-1half"><span>2</span></div>
+                            <div class="col-1half footerhide"><span>...</span></div>
+                            <div class="col-1half footerhide "><span>11</span></div>
+                            <div class="col-1half"><i class="fa fa-chevron-right"></i></div> -->
+
+
+
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
