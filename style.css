@@ -297,16 +297,16 @@
         padding: 5px;
     }
 
-    .invoice button{
+    .invoiceButtons button{
         background-color: white;
         border-radius: 10px;
-        margin-left: 5px;
-        margin: 20px 5px;
+        margin-left: 0px !important;
+        margin: 20px 3px 20px 0px;
     }
     .createInvoice{
         background-color: rgb(12,57,218) !important;
         color: white;
-        font-size: 13px ;
+        font-size: 15px ;
     }
     .invoiceButtons .div{
         margin: 20px;
