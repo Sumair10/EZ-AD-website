@@ -8,9 +8,68 @@
     font-family: 'Bree Serif', serif;
 }
 
+.invoiceButtons .buttonss ,.fa-user{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.invoiceButtons .buttonss:hover ,.fa-user{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.5s;
+}
+.invoiceButtons .buttonsss{
+    box-shadow: none;
+}
+.invoiceHeadSmall .buttonss{
+    box-shadow: none;
+}
+.invoiceHeadSmall .buttonsss{
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.invoiceHeadSmall:hover .buttonsss{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+
+.invoiceInnerSamll .buttonss{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.invoiceInnerSamll .buttonsss{
+    box-shadow: none;
+}
 
 
 
+.filterFormMainDiv .buttonss{
+    box-shadow: none;
+}
+.mainFooterDiv .buttonss{
+    box-shadow: none;
+}
+.rightDiv .buttonss{
+    box-shadow: none;
+}
+.perWeek .week{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.dashBoard{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.filterFormInnerDiv{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.tableDataMainDiv{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.filterFormInnerDiv{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.mainFooterDiv .footerdiv2 p{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.rightDiv .fa-times:hover{
+    color: rgba(255, 24, 24, 0.568);
+    transition: 0.5s;
+}
 /* // Large devices (desktops, less than 1200px) */
 @media (max-width: 1700.98px) { 
 
